@@ -9,7 +9,6 @@
 body {
     background-color: #e5e5e5;
     font-family: 'Montserrat', sans-serif;
-    
 }
 
 .container {
@@ -19,11 +18,18 @@ body {
 }
 
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+    background-color: #e5e5e5;
 }
 
+.header .flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .header img {
     width: 15px;
     height: 15px;
@@ -38,15 +44,24 @@ body {
     height: 80px;
     border: 1px white;
     border-radius: 60px;
-    padding-top: 5px;
+    /* padding-top: 20px; */
     padding-bottom: 5px;
     padding-right: 5px;
     object-fit: cover;
 }
+
+/* .card{
+    margin-right: 0;
+    margin-left: 0;
+
+} */
+
 .cards{
     margin-bottom:100px;
     max-height: 60vh;
-    overflow-y: auto;
+    /* overflow-y: auto; */
+    overflow: hidden;
+
 }
 
 .card-txt {
@@ -91,6 +106,7 @@ body {
     margin-top: 30px;
     margin-bottom: 30px;
     padding-left: 10px;
+    padding-top: 20px;
 }
 
 .savings-section-left p {
@@ -160,12 +176,14 @@ footer {
 }
 
 .footer-section .add-icon {
-    transform: translate(0, -35px);
+    transform: translate(0, -50px);
+    /* border: blanchedalmond 5px solid;
+    border-radius: 50px; */
 }
 
 .footer-section .add-icon img {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
 }
 
 .footer-section .footer-icon img {
@@ -209,6 +227,7 @@ footer {
     height: 10px;
 
 }
+
 
 .inner-range2 {
     border: none;
